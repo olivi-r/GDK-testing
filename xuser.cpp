@@ -43,7 +43,7 @@ int main(void)
     XUserFindForDevice(nullptr,nullptr);
 
     cout << "XUserFindUserById" << endl;
-    XUserFindForDevice(0,nullptr);
+    XUserFindUserById(0,nullptr);
 
     cout << "XUserFindUserByLocalId" << endl;
     XUserFindUserByLocalId({},nullptr);
