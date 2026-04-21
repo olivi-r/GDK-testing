@@ -9,6 +9,9 @@ int main(void)
     cout << "XGameRuntimeInitialize" << endl;
     XGameRuntimeInitialize();
 
+    cout << "XGameRuntimeInitializeWithOptions" << endl;
+    XGameRuntimeInitializeWithOptions(NULL);
+
     cout << "XGameRuntimeUninitialize" << endl;
     XGameRuntimeUninitialize();
 
