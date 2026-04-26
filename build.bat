@@ -11,6 +11,7 @@ cl xasyncprovider.cpp advapi32.lib /EHsc
 cl xdisplay.cpp advapi32.lib /EHsc
 cl xerror.cpp advapi32.lib /EHsc
 cl xgame.cpp advapi32.lib /EHsc
+cl xgameactivation.cpp advapi32.lib /EHsc
 cl xgameevent.cpp advapi32.lib /EHsc
 cl xgameinvite.cpp advapi32.lib /EHsc
 cl xgameprotocol.cpp advapi32.lib /EHsc
