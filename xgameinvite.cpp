@@ -12,5 +12,14 @@ int main(void)
     cout << "XGameInviteUnregisterForEvent" << endl;
     XGameInviteUnregisterForEvent({},0);
 
+    cout << "XGameInviteRegisterForPendingEvent" << endl;
+    XGameInviteRegisterForPendingEvent(nullptr,nullptr,nullptr,nullptr);
+
+    cout << "XGameInviteUnregisterForPendingEvent" << endl;
+    XGameInviteUnregisterForPendingEvent({},0);
+
+    cout << "XGameInviteAcceptPendingInvite" << endl;
+    XGameInviteAcceptPendingInvite(nullptr);
+
     return 0;
 }
