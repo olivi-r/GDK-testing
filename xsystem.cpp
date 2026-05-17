@@ -6,17 +6,23 @@ using namespace std;
 
 int main(void)
 {
-    cout << "XSystemAllowFullDownloadBandwidth" << endl;
-    XSystemAllowFullDownloadBandwidth(0);
+    cout << "XSystemGetConsoleId" << endl;
+    XSystemGetConsoleId(0,nullptr,nullptr);
 
-    cout << "XSystemGetAnalyticsInfo" << endl;
-    XSystemGetAnalyticsInfo();
+    cout << "XSystemGetXboxLiveSandboxId" << endl;
+    XSystemGetXboxLiveSandboxId(0,nullptr,nullptr);
 
     cout << "XSystemGetAppSpecificDeviceId" << endl;
     XSystemGetAppSpecificDeviceId(0,nullptr,nullptr);
 
-    cout << "XSystemGetConsoleId" << endl;
-    XSystemGetConsoleId(0,nullptr,nullptr);
+    cout << "XSystemHandleTrack" << endl;
+    XSystemHandleTrack(nullptr,nullptr);
+
+    cout << "XSystemIsHandleValid" << endl;
+    XSystemIsHandleValid(nullptr);
+
+    cout << "XSystemAllowFullDownloadBandwidth" << endl;
+    XSystemAllowFullDownloadBandwidth(0);
 
     cout << "XSystemGetDeviceType" << endl;
     XSystemGetDeviceType();
@@ -24,14 +30,8 @@ int main(void)
     cout << "XSystemGetRuntimeInfo" << endl;
     XSystemGetRuntimeInfo();
 
-    cout << "XSystemGetXboxLiveSandboxId" << endl;
-    XSystemGetXboxLiveSandboxId(0,nullptr,nullptr);
-
-    cout << "XSystemHandleTrack" << endl;
-    XSystemHandleTrack(nullptr,nullptr);
-
-    cout << "XSystemIsHandleValid" << endl;
-    XSystemIsHandleValid(nullptr);
+    cout << "XSystemGetAnalyticsInfo" << endl;
+    XSystemGetAnalyticsInfo();
 
     return 0;
 }

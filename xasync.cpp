@@ -6,14 +6,14 @@ using namespace std;
 
 int main(void)
 {
-    cout << "XAsyncCancel" << endl;
-    XAsyncCancel(nullptr);
+    cout << "XAsyncGetStatus" << endl;
+    XAsyncGetStatus(nullptr,0);
 
     cout << "XAsyncGetResultSize" << endl;
     XAsyncGetResultSize(nullptr,nullptr);
 
-    cout << "XAsyncGetStatus" << endl;
-    XAsyncGetStatus(nullptr,0);
+    cout << "XAsyncCancel" << endl;
+    XAsyncCancel(nullptr);
 
     cout << "XAsyncRun" << endl;
     XAsyncRun(nullptr,nullptr);

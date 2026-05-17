@@ -15,23 +15,23 @@ int main(void)
     cout << "XHighContrastGetMode" << endl;
     XHighContrastGetMode(nullptr);
 
-    cout << "XSpeechToTextBeginHypothesisString" << endl;
-    XSpeechToTextBeginHypothesisString(nullptr,nullptr,{},nullptr);
-
-    cout << "XSpeechToTextCancelHypothesisString" << endl;
-    XSpeechToTextCancelHypothesisString(0);
-
-    cout << "XSpeechToTextFinalizeHypothesisString" << endl;
-    XSpeechToTextFinalizeHypothesisString(0,nullptr);
+    cout << "XSpeechToTextSetPositionHint" << endl;
+    XSpeechToTextSetPositionHint({});
 
     cout << "XSpeechToTextSendString" << endl;
     XSpeechToTextSendString(nullptr,nullptr,{});
 
-    cout << "XSpeechToTextSetPositionHint" << endl;
-    XSpeechToTextSetPositionHint({});
+    cout << "XSpeechToTextBeginHypothesisString" << endl;
+    XSpeechToTextBeginHypothesisString(nullptr,nullptr,{},nullptr);
 
     cout << "XSpeechToTextUpdateHypothesisString" << endl;
     XSpeechToTextUpdateHypothesisString(0,nullptr);
+
+    cout << "XSpeechToTextFinalizeHypothesisString" << endl;
+    XSpeechToTextFinalizeHypothesisString(0,nullptr);
+
+    cout << "XSpeechToTextCancelHypothesisString" << endl;
+    XSpeechToTextCancelHypothesisString(0);
 
     return 0;
 }

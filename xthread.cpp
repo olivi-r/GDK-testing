@@ -6,14 +6,14 @@ using namespace std;
 
 int main(void)
 {
+    cout << "XThreadSetTimeSensitive" << endl;
+    XThreadSetTimeSensitive(0);
+
     cout << "XThreadAssertNotTimeSensitive" << endl;
     XThreadAssertNotTimeSensitive();
 
     cout << "XThreadIsTimeSensitive" << endl;
     XThreadIsTimeSensitive();
-
-    cout << "XThreadSetTimeSensitive" << endl;
-    XThreadSetTimeSensitive(0);
 
     return 0;
 }
