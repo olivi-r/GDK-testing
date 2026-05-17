@@ -69,6 +69,12 @@ int main(void)
     cout << "XPackageCloseMountHandle" << endl;
     XPackageCloseMountHandle(nullptr);
 
+    cout << "XPackageEnumeratePackages" << endl;
+    XPackageEnumeratePackages({},{},nullptr,nullptr);
+
+    cout << "XPackageRegisterPackageInstalled" << endl;
+    XPackageRegisterPackageInstalled(nullptr,nullptr,nullptr,nullptr);
+
     cout << "XPackageGetWriteStats" << endl;
     XPackageGetWriteStats(nullptr);
 
@@ -81,20 +87,14 @@ int main(void)
     cout << "XPackageUninstallPackage" << endl;
     XPackageUninstallPackage(nullptr);
 
+    cout << "XPackageMount" << endl;
+    XPackageMount(nullptr,nullptr);
+
     cout << "XPackageMountWithUiAsync" << endl;
     XPackageMountWithUiAsync(nullptr,nullptr);
 
     cout << "XPackageMountWithUiResult" << endl;
     XPackageMountWithUiResult(nullptr,nullptr);
-
-    cout << "XPackageEnumeratePackages" << endl;
-    XPackageEnumeratePackages({},{},nullptr,nullptr);
-
-    cout << "XPackageRegisterPackageInstalled" << endl;
-    XPackageRegisterPackageInstalled(nullptr,nullptr,nullptr,nullptr);
-
-    cout << "XPackageMount" << endl;
-    XPackageMount(nullptr,nullptr);
 
     return 0;
 }
