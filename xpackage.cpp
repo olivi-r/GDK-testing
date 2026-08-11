@@ -96,5 +96,8 @@ int main(void)
     cout << "XPackageMountWithUiResult" << endl;
     XPackageMountWithUiResult(nullptr,nullptr);
 
+    cout << "XPackgeGetPackageKind" << endl;
+    XPackageGetPackageKind(nullptr,nullptr);
+
     return 0;
 }
